@@ -244,6 +244,25 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
+				<string>public.json</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Bluewallet Cosigner</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>io.bluewallet.bwcosigner</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bwcosigner</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>

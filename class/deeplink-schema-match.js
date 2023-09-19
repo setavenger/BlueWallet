@@ -36,6 +36,7 @@ class DeeplinkSchemaMatch {
     completionHandler,
     context = { wallets: [], saveToDisk: () => {}, addWallet: () => {}, setSharedCosigner: () => {} },
   ) {
+    console.log(event)
     if (event.url === null) {
       return;
     }
@@ -108,7 +109,8 @@ class DeeplinkSchemaMatch {
         })
         .catch(e => console.warn(e));
       return;
-    } else if (event.url.endsWith('.json')) {
+    } else if (event.url.endsWith('.bwcosigner')) {
+      console.log(event)
       RNFS.readFile(decodeURI(event.url))
         .then(file => {
           // checks whether the necessary json keys are present in order to set a cosigner,
